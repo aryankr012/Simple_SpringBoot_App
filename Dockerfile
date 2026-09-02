@@ -8,7 +8,7 @@ COPY src ./src
 RUN mvn clean package 
 
 
-FROM tomcat:9-jdk17
+FROM tomcat:10.1-jdk17
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
